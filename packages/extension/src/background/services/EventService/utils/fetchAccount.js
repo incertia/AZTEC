@@ -1,8 +1,8 @@
 import Web3Service from '~background/services/Web3Service';
 import {
     AZTECAccountRegistryConfig,
-} from '~background/config/contracts'
- 
+} from '~background/config/contracts';
+
 
 export const fetchAccount = async({
     address,
@@ -42,11 +42,13 @@ export const fetchAccount = async({
             blockNumber,
             returnValues: {
                 linkedPublicKey,
+                spendingPublicKey,
             }
         }) => ({
             address,
             blockNumber,
             linkedPublicKey,
+            spendingPublicKey,
         }));
 
         const account = accounts.length ? accounts[accounts.length - 1] : null;
