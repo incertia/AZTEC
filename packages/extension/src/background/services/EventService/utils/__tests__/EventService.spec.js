@@ -1,15 +1,13 @@
-import EventService from '../../';
+import EventService from '../..';
 import Note from '~background/database/models/note';
 import Account from '~background/database/models/account';
 import Asset from '~background/database/models/asset';
 import {
    NOTE_STATUS,
-} from '~background/config/constants'
+} from '~background/config/constants';
 import * as fetchAccountModule from '../fetchAccount';
 import * as fetchNotesModule from '../fetchNotes';
-import {
-   clearDB,
-} from '~background/database';
+import clearDB from '~background/database/utils/clearDB';
 
 
 describe('LastSyncedBlock', () => {

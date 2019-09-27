@@ -1,10 +1,8 @@
 import { 
     createBulkAssets,
-} from '../';
+} from '..';
 import Asset from '~background/database/models/asset';
-import {
-    clearDB
-} from '~background/database';
+import clearDB from '~background/database/utils/clearDB';
 
 
 describe('createBulkAssets', () => {

@@ -1,10 +1,8 @@
 import { 
     createBulkNotes,
-} from '../';
+} from '..';
 import Note from '~background/database/models/note';
-import {
-    clearDB
-} from '~background/database';
+import clearDB from '~background/database/utils/clearDB';
 import { NOTE_STATUS } from '~background/config/constants';
 
 
